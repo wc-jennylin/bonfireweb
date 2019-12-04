@@ -1,10 +1,16 @@
 ////////////////////////////////////////
 // CONNECTION
 ////////////////////////////////////////
+//const connection = new Connection(
+//    "Bonfire",
+//    "player",
+//    "http://localhost:8000"
+//);
+
 const connection = new Connection(
     "Bonfire",
     "player",
-    "http://localhost:8000"
+    ""
 );
 
 connection.onConnect(() => {
