@@ -57,6 +57,7 @@ function setup() {
 function keyPressed() {
     if (keyCode == ENTER) {
         connection.send("create-text", input.value());
+        connection.send("text", input.value());
         input.value("");
     }
 }
