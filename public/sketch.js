@@ -67,5 +67,6 @@ function keyPressed() {
         connection.send("create-text", input.value());
         // connection.send("text-original", input.value());
         input.value("");
+        console.log("message send");
     }
 }
