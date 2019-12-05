@@ -29,10 +29,18 @@ function setup() {
     // Listen for changes to input field
     input = select("#input");
 
+    connection.on("text-original", function(data){
+    let message = {
+        id: socket.id,
+        word: data
+    }
+    connection.send("text", message);
+    });
+
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
         let id = message.id;
-        let txt = message;
+        let txt = message.word;
         let p;
         try {
             p = select("#" + id).html(txt);
@@ -57,7 +65,7 @@ function setup() {
 function keyPressed() {
     if (keyCode == ENTER) {
         connection.send("create-text", input.value());
-        connection.send("text", input.value());
+        connection.send("text-original", input.value());
         input.value("");
     }
 }
