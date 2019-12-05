@@ -5,7 +5,7 @@
 const connection = new Connection(
     "Bonfire",
     "player",
-    ""
+    "https://fireflower.herokuapp.com/"
 );
 
 connection.onConnect(() => {
