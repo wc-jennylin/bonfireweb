@@ -1,9 +1,9 @@
 body {
   background-color: #1a1a1a;
-  margin: 0em 2em;
+  margin: 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
   height: 75vh;
 }
@@ -16,6 +16,7 @@ body {
   border-radius: 50px;
   box-sizing: border-box;
   padding: 12px 20px;
+  margin: 8px 8px;
   bottom: 0px;
   left: 0px;
   width: 100vw;
