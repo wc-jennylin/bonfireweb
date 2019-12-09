@@ -37,7 +37,7 @@ function setup() {
     connection.on("you-got-in", function(){
         let congrats = createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...");
         congrats.addClass("center");
-        // congrats.addClass("load");
+        congrats.addClass("fade-out");
     });
 
     // Open chatroom
