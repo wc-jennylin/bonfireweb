@@ -30,8 +30,13 @@ function setup() {
         createP("Sorry, only 50 people can play...");
         createElement("br");
         createP("Join sooner next time!");
+        connection.close();
     });
 
+    // Onboarding
+    connection.on(){
+
+    }
     // Listen for changes to input field
     input = createInput('');
     input.id('input');
