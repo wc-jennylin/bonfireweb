@@ -38,21 +38,21 @@ function setup() {
     input.attribute('placeholder','Find who you are talking to ;)');
 
     // Listen for texts from partners
-    connection.on("text", function(id, text) {
-        let d = id;
-        let txt = text;
+    connection.on("text", function(text) {
+        let id = text.id;
+        let txt = text.value;
         let p;
         try {
-            p = select("#" + d).html(txt);
+            p = select("#" + id).html(txt);
             p.elt.className = "";
             if (p.timeout) clearTimeout(p.timeout);
             p.timeout = setTimeout(() => p.addClass("fade"), 100);
             console.log("same person");
         } catch {
             // Otherwise craete a new on
-            p = createP(txt).id(d);
+            p = createP(txt).id(id);
             p.addClass("fade");
-            console.log(d);
+            console.log(id);
         }
     });
 
