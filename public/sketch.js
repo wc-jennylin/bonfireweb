@@ -33,7 +33,7 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        createP("Welcome to BONFIRE!" + "<br>" + "Please wait for the countdown to begin...").addClass("center");
+        createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("center");
     });
 
     // Open chatroom
