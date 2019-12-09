@@ -52,7 +52,7 @@ function setup() {
             // Otherwise craete a new on
             p = createP(txt).id(id);
             p.addClass("fade");
-            console.log(sender.id + sender);
+            console.log(sender.id, sender);
         }
     });
 
