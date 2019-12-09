@@ -39,7 +39,7 @@ function setup() {
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
-        let id = sender;
+        let id = sender.id;
         let txt = message;
         let p;
         try {
