@@ -47,7 +47,7 @@ function setup() {
             p.elt.className = "";
             if (p.timeout) clearTimeout(p.timeout);
             p.timeout = setTimeout(() => p.addClass("fade"), 100);
-            console.log("same person");
+            console.log("same" + id);
         } catch {
             // Otherwise craete a new on
             p = createP(txt).id(id);
