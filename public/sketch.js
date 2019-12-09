@@ -33,7 +33,7 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        createP("Welcome to Bonfire! Please wait for the countdown to begin...");
+        createP("Welcome to Bonfire! Please wait for the countdown to begin...").addClass("center");
     });
 
     // Listen for changes to input field
