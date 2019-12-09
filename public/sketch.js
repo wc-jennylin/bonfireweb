@@ -28,13 +28,14 @@ function setup() {
     // List is full
     connection.on("list-is-full", function(){
         createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
+        createElement("br");
         createP("Please be the first to join our next round!");
     });
 
     // Listen for changes to input field
     input = createInput('');
     input.id('input');
-    input.attribute('placeholder','Find Who You Are Talking To');
+    input.attribute('placeholder','Find Who You Are Talking To ;)');
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
@@ -56,10 +57,7 @@ function setup() {
     // Remove disconnected users
     // Display "User left" message
     connection.on("leave room", function() {
-        createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
-        createElement("br");
-        createP("Please be the first to join our next round!");
-        // createP("(someone left...)").addClass("fade");
+        createP("(someone left...)").addClass("fade");
     });
 }
 

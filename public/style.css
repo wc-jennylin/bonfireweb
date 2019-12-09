@@ -8,7 +8,8 @@ body {
   height: 75vh;
 }
 #input {
-  color: black;
+  background-color: #1a1a1a;
+  color: white;
   position: fixed;
   bottom: 0px;
   left: 0px;
