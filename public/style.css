@@ -19,15 +19,11 @@ body {
   margin: 16px 12px;
   bottom: 0px;
   left: 0px;
-  width: 92vw;
+  width: 93vw;
   height: 2em;
   font-size: 1.5em;
 }
 p {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
   font-family: Cherry Swash;
   color: #fff6ca;
   font-size: 1.5em;
