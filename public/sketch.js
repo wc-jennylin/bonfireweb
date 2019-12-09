@@ -25,17 +25,14 @@ let input;
 
 function setup() {
     noCanvas();
+    // List is full
+    connection.on("list-is-full", function(){
+        createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
+        createP("Please be the first to join our next round!");
+    });
 
     // Listen for changes to input field
-    input = select("#input");
-
-    // connection.on("text-original", function(data){
-    // let message = {
-    //     id: socket.id,
-    //     word: data
-    // }
-    // connection.send("text", message);
-    // });
+    input = createInput('Find Who You Are Talking To');
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
@@ -57,7 +54,9 @@ function setup() {
     // Remove disconnected users
     // Display "User left" message
     connection.on("leave room", function() {
-        createP("(someone left...)").addClass("fade");
+        createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
+        createP("Please be the first to join our next round!");
+        // createP("(someone left...)").addClass("fade");
     });
 }
 
