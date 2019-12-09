@@ -57,6 +57,17 @@ p.center{
   text-align: center;
 }
 
+.tips {
+  color: #ffffff;
+  font-size: 1em;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 20s ease-in;
+  -moz-transition: opacity 20s ease-in;
+  -ms-transition: opacity 20s ease-in;
+  -o-transition: opacity 20s ease-in;
+}
+
 /* .load{
   -webkit-transition: opacity 30s ease-in;
   -moz-transition: opacity 30s ease-in;

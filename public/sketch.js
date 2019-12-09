@@ -91,8 +91,8 @@ function draw(){
             '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
             '3)	Gather at a specific location' + '<br>' +
             '4)	What colors everyone is wearing' + '<br>' +
-            'Get C.R.E.A.T.I.V.E!').addClass('prompt');
-            tips.addClass('fade-out');
+            'Get C.R.E.A.T.I.V.E!').addClass('tips');
+            // tips.addClass('fade-out');
             start = -1;
         }
         console.log(start, now, time);   
