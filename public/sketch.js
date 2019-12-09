@@ -40,7 +40,7 @@ function setup() {
     // Listen for texts from partners
     connection.on("text", function(text) {
         let id = text.id;
-        let txt = text.value;
+        let txt = text;
         let p;
         try {
             p = select("#" + id).html(txt);
