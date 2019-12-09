@@ -44,10 +44,10 @@ p.center{
   /* border-style: none; */
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 .prompt {
