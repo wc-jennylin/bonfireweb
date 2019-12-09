@@ -38,8 +38,8 @@ function setup() {
     input.attribute('placeholder','Find who you are talking to ;)');
 
     // Listen for texts from partners
-    connection.on("text", function(identification, text) {
-        let id = text.id;
+    connection.on("text", function(sender, identification, text) {
+        let id = identification;
         let txt = text;
         let p;
         try {
