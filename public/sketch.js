@@ -45,6 +45,9 @@ function setup() {
         input = createInput('');
         input.id('input');
         input.attribute('placeholder','Find who you are talking to ;)');
+        let welcome = createDiv('Try to find at most 4 other people in this chatroom" + "<br>" + "then sit your group at a flower');
+        welcome.addClass('transbox');
+        // let welcome = createP("Try to find at most 4 other people in this chatroom" + "<br>" + "then sit your group at a flower");
     });
 
     // Listen for texts from partners

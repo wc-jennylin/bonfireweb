@@ -37,6 +37,19 @@ p.center{
   -o-transition: opacity 30s ease-in;
 }
 
+.transbox {
+  margin: 30px;
+  background-color: #fff6ca;
+  border-radius: 24px;
+  border-style: none;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
 /* .load{
   -webkit-transition: opacity 30s ease-in;
   -moz-transition: opacity 30s ease-in;
