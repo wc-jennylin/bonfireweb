@@ -55,22 +55,6 @@ function setup() {
         start = second();
     });
 
-    function draw(){
-        if (start != -1){
-            let now = second();
-            let time = now - start;
-            if (time > 30){
-                createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
-                '1)	Count off' + '<br>' +
-                '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
-                '3)	Gather at a specific location' + '<br>' +
-                '4)	What colors everyone is wearing' + '<br>' +
-                'Get Creative!').addClass('prompt');
-            }
-        }
-         console.log(time);   
-    }
-
     // Listen for texts from partners
     connection.on("text", function(sender, identification, text) {
         let id = identification;
@@ -95,6 +79,22 @@ function setup() {
     connection.on("leave room", function() {
         createP("(someone left...)").addClass("fade-out");
     });
+}
+
+function draw(){
+    if (start != -1){
+        let now = second();
+        let time = now - start;
+        if (time > 30){
+            createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
+            '1)	Count off' + '<br>' +
+            '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
+            '3)	Gather at a specific location' + '<br>' +
+            '4)	What colors everyone is wearing' + '<br>' +
+            'Get Creative!').addClass('prompt');
+        }
+    }
+     console.log(time);   
 }
 
 // Listen for line breaks to clear input field
