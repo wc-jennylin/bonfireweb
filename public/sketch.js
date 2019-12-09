@@ -92,6 +92,7 @@ function draw(){
             '3)	Gather at a specific location' + '<br>' +
             '4)	What colors everyone is wearing' + '<br>' +
             'Get Creative!').addClass('prompt');
+            start = -1;
         }
         console.log(start, now, time);   
     }
