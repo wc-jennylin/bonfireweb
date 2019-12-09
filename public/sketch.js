@@ -84,7 +84,7 @@ function setup() {
 function draw(){
     if (start != -1){
         let now = second();
-        let time = now - start;
+        let time = abs(now - start);
         if (time > 30){
             createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
             '1)	Count off' + '<br>' +
