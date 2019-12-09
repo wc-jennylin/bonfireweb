@@ -27,9 +27,9 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
+        createP("Sorry, only 50 people can play...");
         createElement("br");
-        createP("Please be the first to join our next round!");
+        createP("Join sooner next time!");
     });
 
     // Listen for changes to input field
