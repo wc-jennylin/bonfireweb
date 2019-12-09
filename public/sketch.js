@@ -55,9 +55,9 @@ function setup() {
     });
 
     function draw(){
-        If (start != undefined){
-            const now = second();
-            const time = now - start;
+        if (start != undefined){
+            let now = second();
+            let time = now - start;
             if (time > 30){
                 createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
                 '1)	Count off' + '<br>' +
