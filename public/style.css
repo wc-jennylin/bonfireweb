@@ -38,7 +38,7 @@ p.center{
 }
 
 .transbox {
-  margin: 30px;
+  /* margin: 30px; */
   background-color: #fff6ca;
   border-radius: 24px;
   /* border-style: none; */
@@ -51,10 +51,11 @@ p.center{
 }
 
 .prompt {
-  color: #1a1a1a;
+  color: #fff6ca;
   font-size: 1em;
   text-align: center;
 }
+
 /* .load{
   -webkit-transition: opacity 30s ease-in;
   -moz-transition: opacity 30s ease-in;
