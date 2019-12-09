@@ -3,7 +3,7 @@ body {
   margin: 0em 2em;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-direction: column;
   height: 75vh;
 }
@@ -24,7 +24,7 @@ body {
 }
 p {
   font-family: Cherry Swash;
-  color: white;
+  color: #fff6ca;
   font-size: 1.5em;
   text-align: center;
   margin-top: 0.25em 0;
