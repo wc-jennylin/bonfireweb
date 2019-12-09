@@ -55,7 +55,7 @@ function setup() {
     // Display "User left" message
     connection.on("leave room", function() {
         createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
-        // createP("Please be the first to join our next round!");
+        createP("Please be the first to join our next round!");
         // createP("(someone left...)").addClass("fade");
     });
 }
