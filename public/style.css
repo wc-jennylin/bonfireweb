@@ -24,7 +24,7 @@ body {
   font-size: 1.5em;
 }
 
-.center{
+p.center{
   position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
