@@ -38,9 +38,9 @@ function setup() {
     input.attribute('placeholder','Find Who You Are Talking To ;)');
 
     // Listen for texts from partners
-    connection.on("text", function(sender, message) {
+    connection.on("text", function(sender, text) {
         let id = sender;
-        let txt = message;
+        let txt = text;
         let p;
         try {
             p = select("#" + id).html(txt);
