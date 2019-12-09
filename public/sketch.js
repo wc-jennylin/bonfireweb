@@ -99,7 +99,7 @@ function draw(){
             start = now;
             timeToTip = false;
         } else if (time > 30 && timeToRemind){
-            let reminder = createP("Gather your group at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
+            let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
             start = -1;
             timeToRemind = false;
         }
