@@ -34,9 +34,8 @@ function setup() {
     });
 
     // Onboarding
-    connection.on(){
-
-    }
+    connection.on();
+    
     // Listen for changes to input field
     input = createInput('');
     input.id('input');
