@@ -39,20 +39,20 @@ function setup() {
 
     // Listen for texts from partners
     connection.on("text", function(id, text) {
-        let ID = id;
+        let id = id;
         let txt = text;
         let p;
         try {
-            p = select("#" + ID).html(txt);
+            p = select("#" + id).html(txt);
             p.elt.className = "";
             if (p.timeout) clearTimeout(p.timeout);
             p.timeout = setTimeout(() => p.addClass("fade"), 100);
             console.log("same person");
         } catch {
             // Otherwise craete a new on
-            p = createP(txt).id(ID);
+            p = createP(txt).id(id);
             p.addClass("fade");
-            console.log(ID);
+            console.log(id);
         }
     });
 
