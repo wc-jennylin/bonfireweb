@@ -39,7 +39,7 @@ function setup() {
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
-        let id = message.id;
+        let id = sender.id;
         let txt = message;
         let p;
         try {
@@ -65,8 +65,7 @@ function setup() {
 function keyPressed() {
     if (keyCode == ENTER) {
         connection.send("create-text", input.value());
-        // connection.send("text-original", input.value());
         input.value("");
-        console.log("message send");
+        // console.log("message send");
     }
 }
