@@ -49,7 +49,8 @@ function setup() {
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
-        welcomeMessage.addClass('prompt');
+        welcomeMessage = welcomeMessage.addClass('prompt');
+        welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
         start = second();
     });
