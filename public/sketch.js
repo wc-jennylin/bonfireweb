@@ -24,7 +24,7 @@ connection.onError(err => {
 let input;
 let start;
 let timeToTip = true;
-let timeToRemind = true;
+let timeToRemind = false;
 
 function setup() {
     noCanvas();
@@ -98,7 +98,10 @@ function draw(){
             // tips.addClass('fade-out');
             start = now;
             timeToTip = false;
-        } else if (time > 30 && timeToRemind){
+        } else if (time > 30 && timeToTip == false){
+            start = now;
+            timeToRemind = true;
+            if (time > 30 && timeToRemind)
             let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
             start = -1;
             timeToRemind = false;
