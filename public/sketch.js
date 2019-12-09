@@ -98,8 +98,7 @@ function draw(){
             // tips.addClass('fade-out');
             start = now;
             timeToTip = false;
-        }
-        if (time > 30 && timeToRemind){
+        } else if (time > 30 && timeToRemind){
             let reminder = createP("Gather your group at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
             start = -1;
             timeToRemind = false;
