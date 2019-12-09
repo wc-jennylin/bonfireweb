@@ -68,7 +68,7 @@ function setup() {
                 'Get Creative!').addClass('prompt');
             }
         }
-            
+         console.log(time);   
     }
 
     // Listen for texts from partners
