@@ -24,8 +24,8 @@ body {
   font-size: 1.5em;
 }
 
-.center{
-  height: 100vh;
+p.center{
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
