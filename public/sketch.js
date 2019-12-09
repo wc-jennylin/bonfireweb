@@ -28,13 +28,13 @@ function setup() {
     // List is full
     connection.on("list-is-full", function(){
         createP("Sorry, only 50 people can play... Join sooner next time!").addClass("center");
-        // createElement("br");
-        // createP("Join sooner next time!").addClass("center");
         connection.close();
     });
 
     // Onboarding
-    connection.on();
+    connection.on("you-got-in", function(){
+        createP("Welcome to Bonfire! Please wait for the countdown to begin...");
+    });
 
     // Listen for changes to input field
     input = createInput('');
