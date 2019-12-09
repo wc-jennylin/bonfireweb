@@ -27,9 +27,9 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        createP("Sorry, only 50 people can play...").addClass("center");
-        createElement("br");
-        createP("Join sooner next time!").addClass("center");
+        createP("Sorry, only 50 people can play... Join sooner next time!").addClass("center");
+        // createElement("br");
+        // createP("Join sooner next time!").addClass("center");
         connection.close();
     });
 

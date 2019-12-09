@@ -25,13 +25,11 @@ body {
 }
 
 .center{
-  position: absolute;
-  width: 100px;
-  height: 50px;
+  position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
-  margin-left: -50px; /* margin is -0.5 * dimension */
-  margin-top: -25px; 
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
 p {
