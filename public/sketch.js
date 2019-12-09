@@ -33,6 +33,7 @@ function setup() {
 
     // Listen for changes to input field
     input = createInput('Find Who You Are Talking To');
+    input.id('input');
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
@@ -55,6 +56,7 @@ function setup() {
     // Display "User left" message
     connection.on("leave room", function() {
         createP("We are sorry, but you need to be the first 50 people to join this social experiment.");
+        createElement("br");
         createP("Please be the first to join our next round!");
         // createP("(someone left...)").addClass("fade");
     });
