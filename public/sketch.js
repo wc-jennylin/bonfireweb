@@ -93,7 +93,7 @@ function draw(){
             '1)	Count off' + '<br>' +
             '2)	Everyone raises a hand/does jumping jacks' + '<br>' + 
             '3)	Gather at a specific location' + '<br>' +
-            '4)	What colors everyone is wearing' + '<br>' +
+            '4)	Ask what colors everyone is wearing' + '<br>' +
             'Get C.R.E.A.T.I.V.E!').addClass('tips');
             // tips.addClass('fade-out');
             start = now;
