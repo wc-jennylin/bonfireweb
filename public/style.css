@@ -44,13 +44,17 @@ p.center{
   border-style: none;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
-  position: fixed; /* or absolute */
-  top: 75%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
+.prompt {
+  color: #1a1a1a;
+  font-size: 1em;
+  text-align: center;
+}
 /* .load{
   -webkit-transition: opacity 30s ease-in;
   -moz-transition: opacity 30s ease-in;

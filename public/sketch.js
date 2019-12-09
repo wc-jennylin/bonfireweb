@@ -48,7 +48,8 @@ function setup() {
         let welcome = createDiv('');
         welcome.addClass('transbox');
         let welcomeMessage = createP("Try to find at most 4 other people in this chatroom" + "<br>" + "then sit your group at a flower");
-        welcomeMessage.parent("welcome");
+        welcomeMessage.addClass('prompt');
+        welcome.child('welcomeMessage');
     });
 
     // Listen for texts from partners
