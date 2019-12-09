@@ -9,10 +9,13 @@ body {
 }
 #input {
   background-color: #1a1a1a;
-  color: white;
+  color: #fff6ca;
   position: fixed;
   outline: none;
-  border-radius: 20px;
+  border: 1px solid #fff6ca;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 12px 20px;
   bottom: 0px;
   left: 0px;
   width: 100vw;
