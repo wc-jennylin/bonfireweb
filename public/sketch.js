@@ -91,7 +91,7 @@ function draw(){
             '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
             '3)	Gather at a specific location' + '<br>' +
             '4)	What colors everyone is wearing' + '<br>' +
-            'Get Creative!').addClass('prompt');
+            'Get C.R.E.A.T.I.V.E!').addClass('prompt');
             start = -1;
         }
         console.log(start, now, time);   
