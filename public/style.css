@@ -35,7 +35,6 @@ p.center{
   -moz-transition: opacity 30s ease-in;
   -ms-transition: opacity 30s ease-in;
   -o-transition: opacity 30s ease-in;
-  opacity: 1;
 }
 
 /* .load{
