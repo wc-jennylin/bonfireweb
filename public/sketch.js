@@ -23,6 +23,8 @@ connection.onError(err => {
 // Input field
 let input;
 let start;
+let timeToTip = true;
+let timeToRemind = true;
 
 function setup() {
     noCanvas();
@@ -85,7 +87,7 @@ function draw(){
     if (start != -1){
         let now = second();
         let time = abs(now - start);
-        if (time > 30){
+        if (time > 30 && timeToTip){
             let tips = createP('Hint: At most 5 people in a chatroom' + '<br>' +
             'You all could ... to find each other faster ;)' + '<br>' +
             '1)	Count off' + '<br>' +
@@ -94,11 +96,13 @@ function draw(){
             '4)	What colors everyone is wearing' + '<br>' +
             'Get C.R.E.A.T.I.V.E!').addClass('tips');
             // tips.addClass('fade-out');
-            start = -1;
+            start = now;
+            timeToTip = false;
         }
-        if (time > 59){
+        if (time > 30 && timeToRemind){
             let reminder = createP("Gather your group at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
             start = -1;
+            timeToRemind = false;
         }
         console.log(start, now, time);   
     }
