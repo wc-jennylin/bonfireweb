@@ -66,6 +66,7 @@ function setup() {
                 '4)	What colors everyone is wearing' + '<br>' +
                 'Get Creative!').addClass('prompt');
             }
+        }
             
     }
 
