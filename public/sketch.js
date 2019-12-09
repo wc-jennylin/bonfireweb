@@ -36,10 +36,12 @@ function setup() {
         createP("Welcome to BONFIRE!" + "<br>" + "Please wait for the countdown to begin...").addClass("center");
     });
 
-    // Listen for changes to input field
-    input = createInput('');
-    input.id('input');
-    input.attribute('placeholder','Find who you are talking to ;)');
+    // Open chatroom
+    connection.on("start", function(){
+        input = createInput('');
+        input.id('input');
+        input.attribute('placeholder','Find who you are talking to ;)');
+    });
 
     // Listen for texts from partners
     connection.on("text", function(sender, identification, text) {
