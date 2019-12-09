@@ -39,10 +39,18 @@ p {
   text-align: center;
   /* margin-top: 0.25em 0; */
 }
-p.fade {
+p.fade-out {
   -webkit-transition: opacity 10s ease-in-out;
   -moz-transition: opacity 10s ease-in-out;
   -ms-transition: opacity 10s ease-in-out;
   -o-transition: opacity 10s ease-in-out;
   opacity: 0;
+}
+
+p.fade-in {
+  -webkit-transition: opacity 10s ease-in;
+  -moz-transition: opacity 10s ease-in;
+  -ms-transition: opacity 10s ease-in;
+  -o-transition: opacity 10s ease-in;
+  opacity: 1;
 }

@@ -27,13 +27,13 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        createP("Sorry, only 50 people can play... + "<br>" + Join sooner next time!").addClass("center");
+        createP("Sorry, only 50 people can play... + "<br>" + Join sooner next time!").addClass("center").addClass('fade-in');
         connection.close();
     });
 
     // Onboarding
     connection.on("you-got-in", function(){
-        createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("center");
+        createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("center").addClass('fade-in');
     });
 
     // Open chatroom
@@ -52,12 +52,12 @@ function setup() {
             p = select("#" + id).html(txt);
             p.elt.className = "";
             if (p.timeout) clearTimeout(p.timeout);
-            p.timeout = setTimeout(() => p.addClass("fade"), 100);
+            p.timeout = setTimeout(() => p.addClass("fade-out"), 100);
             console.log("same" + id);
         } catch {
             // Otherwise craete a new on
             p = createP(txt).id(id);
-            p.addClass("fade");
+            p.addClass("fade-out");
             console.log(id);
         }
     });
@@ -65,7 +65,7 @@ function setup() {
     // Remove disconnected users
     // Display "User left" message
     connection.on("leave room", function() {
-        createP("(someone left...)").addClass("fade");
+        createP("(someone left...)").addClass("fade-out");
     });
 }
 
