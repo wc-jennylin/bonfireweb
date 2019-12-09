@@ -44,12 +44,12 @@ function setup() {
     connection.on("start", function(){
         input = createInput('');
         input.id('input');
-        input.attribute('placeholder','Find who you are talking to ;)');
-        let welcome = createDiv('');
+        input.attribute('placeholder','Type to find who you are talking to ;)');
+        // let welcome = createDiv('');
         // welcome.addClass('transbox');
         let welcomeMessage = createP("Try to find at most 4 other people in this chatroom" + "<br>" + "then sit your group at a flower.");
         welcomeMessage.addClass('prompt');
-        welcome.child('welcomeMessage');
+        // welcome.child('welcomeMessage');
     });
 
     // Listen for texts from partners
