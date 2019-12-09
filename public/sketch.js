@@ -22,6 +22,7 @@ connection.onError(err => {
 
 // Input field
 let input;
+let start;
 
 function setup() {
     noCanvas();
@@ -45,12 +46,28 @@ function setup() {
         input = createInput('');
         input.id('input');
         input.attribute('placeholder','Type to find who you are talking to ;)');
-        let welcome = createDiv('');
-        welcome.addClass('transbox');
-        let welcomeMessage = createP("Try to find at most 4 other people in this chatroom" + "<br>" + "then sit your group at a flower.");
+        // let welcome = createDiv('');
+        // welcome.addClass('transbox');
+        let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
         welcomeMessage.addClass('prompt');
-        welcome.child('welcomeMessage');
+        // welcome.child('welcomeMessage');
+        start = second();
     });
+
+    function draw(){
+        If (start != undefined){
+            const now = second();
+            const time = now - start;
+            if (time > 30){
+                createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
+                '1)	Count off' + '<br>' +
+                '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
+                '3)	Gather at a specific location' + '<br>' +
+                '4)	What colors everyone is wearing' + '<br>' +
+                'Get Creative!').addClass('prompt');
+            }
+            
+    }
 
     // Listen for texts from partners
     connection.on("text", function(sender, identification, text) {
