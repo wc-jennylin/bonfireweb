@@ -11,6 +11,8 @@ body {
   background-color: #1a1a1a;
   color: white;
   position: fixed;
+  outline: none;
+  border-radius: 20px;
   bottom: 0px;
   left: 0px;
   width: 100vw;
