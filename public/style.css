@@ -23,6 +23,14 @@ body {
   height: 2em;
   font-size: 1.5em;
 }
+
+.center{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 p {
   font-family: Cherry Swash;
   color: #fff6ca;

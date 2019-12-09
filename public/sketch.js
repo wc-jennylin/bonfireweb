@@ -27,15 +27,15 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        createP("Sorry, only 50 people can play...");
-        createElement("br");
-        createP("Join sooner next time!");
+        createP("Sorry, only 50 people can play...").addClass('center');
+        // createElement("br");
+        createP("Join sooner next time!").addClass("center");
         connection.close();
     });
 
     // Onboarding
     connection.on();
-    
+
     // Listen for changes to input field
     input = createInput('');
     input.id('input');
