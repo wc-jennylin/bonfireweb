@@ -30,6 +30,11 @@ body {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  -webkit-transition: opacity 10s ease-in;
+  -moz-transition: opacity 10s ease-in;
+  -ms-transition: opacity 10s ease-in;
+  -o-transition: opacity 10s ease-in;
+  opacity: 1;
 }
 
 p {
@@ -45,12 +50,4 @@ p.fade-out {
   -ms-transition: opacity 10s ease-in-out;
   -o-transition: opacity 10s ease-in-out;
   opacity: 0;
-}
-
-p.fade-in {
-  -webkit-transition: opacity 10s ease-in;
-  -moz-transition: opacity 10s ease-in;
-  -ms-transition: opacity 10s ease-in;
-  -o-transition: opacity 10s ease-in;
-  opacity: 1;
 }

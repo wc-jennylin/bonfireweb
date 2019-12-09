@@ -27,13 +27,13 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        createP("Sorry, only 50 people can play... + "<br>" + Join sooner next time!").addClass("center").addClass('fade-in');
+        createP("Sorry, only 50 people can play... + "<br>" + Join sooner next time!").addClass("center");
         connection.close();
     });
 
     // Onboarding
     connection.on("you-got-in", function(){
-        createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("center").addClass('fade-in');
+        createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("center");
     });
 
     // Open chatroom
