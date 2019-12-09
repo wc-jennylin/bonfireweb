@@ -32,8 +32,9 @@ function setup() {
     });
 
     // Listen for changes to input field
-    input = createInput('Find Who You Are Talking To');
+    input = createInput('');
     input.id('input');
+    input.placeholder('Find Who You Are Talking To');
 
     // Listen for texts from partners
     connection.on("text", function(sender, message) {
