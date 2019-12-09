@@ -30,16 +30,16 @@ p.center{
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-.load{
+/* .load{
   -webkit-transition: opacity 10s ease-in;
   -moz-transition: opacity 10s ease-in;
   -ms-transition: opacity 10s ease-in;
   -o-transition: opacity 10s ease-in;
   opacity: 1;
-}
+} */
 
 p {
   font-family: Cherry Swash;
