@@ -95,6 +95,10 @@ function draw(){
             // tips.addClass('fade-out');
             start = -1;
         }
+        if (time > 90){
+            let reminder = createP("Gather your group at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
+            start = -1;
+        }
         console.log(start, now, time);   
     }
 }
