@@ -101,10 +101,11 @@ function draw(){
         } else if (time > 30 && timeToTip == false){
             start = now;
             timeToRemind = true;
-            if (time > 30 && timeToRemind)
-            let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "and everyone sends the code on the flower to the chatroom").addClass('tips');
+            if (time > 30 && timeToRemind){
+            let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "& everyone sends the code on the flower to the chatroom").addClass('tips');
             start = -1;
             timeToRemind = false;
+            }   
         }
         console.log(start, now, time);   
     }
