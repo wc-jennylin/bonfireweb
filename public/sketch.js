@@ -56,7 +56,7 @@ function setup() {
     });
 
     function draw(){
-        if (start != undefined){
+        if (start != -1){
             let now = second();
             let time = now - start;
             if (time > 30){
