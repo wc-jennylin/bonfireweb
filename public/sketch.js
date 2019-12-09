@@ -38,8 +38,8 @@ function setup() {
     input.attribute('placeholder','Find who you are talking to ;)');
 
     // Listen for texts from partners
-    connection.on("text", function(sender, text) {
-        let id = sender.id;
+    connection.on("text", function(id, text) {
+        let id = id;
         let txt = text;
         let p;
         try {
@@ -52,7 +52,7 @@ function setup() {
             // Otherwise craete a new on
             p = createP(txt).id(id);
             p.addClass("fade");
-            console.log(sender.id, sender);
+            console.log(id);
         }
     });
 
