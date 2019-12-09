@@ -35,7 +35,7 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        let congrats = createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...");
+        let congrats = createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown on the big screen to begin...");
         congrats.addClass("center");
         congrats.addClass("fade-out");
     });
