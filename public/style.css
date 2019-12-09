@@ -31,14 +31,14 @@ p.center{
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: opacity 10s ease-in;
-  -moz-transition: opacity 10s ease-in;
-  -ms-transition: opacity 10s ease-in;
-  -o-transition: opacity 10s ease-in;
 }
 
 .load{
   opacity: 1;
+  -webkit-transition: opacity 10s ease-in;
+  -moz-transition: opacity 10s ease-in;
+  -ms-transition: opacity 10s ease-in;
+  -o-transition: opacity 10s ease-in;
 }
 
 p {
