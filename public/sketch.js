@@ -27,15 +27,17 @@ function setup() {
     noCanvas();
     // List is full
     connection.on("list-is-full", function(){
-        let sorry = createP("Sorry, only 50 people can play..." + "<br>" + "Join sooner next time!").addClass("fade-out");
+        let sorry = createP("Sorry, only 50 people can play..." + "<br>" + "Join sooner next time!");
         sorry.addClass("center");
+        sorry.addClass("load");
         connection.close();
     });
 
     // Onboarding
     connection.on("you-got-in", function(){
-        let congrats = createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...").addClass("fade-out");
+        let congrats = createP("Welcome to Bonfire!" + "<br>" + "Please wait for the countdown to begin...");
         congrats.addClass("center");
+        congrats.addClass("load");
     });
 
     // Open chatroom

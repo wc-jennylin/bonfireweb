@@ -37,6 +37,10 @@ p.center{
   -o-transition: opacity 10s ease-in;
 }
 
+.load{
+  opacity: 1;
+}
+
 p {
   font-family: Cherry Swash;
   color: #fff6ca;
@@ -45,9 +49,9 @@ p {
   /* margin-top: 0.25em 0; */
 }
 p.fade-out {
+  opacity: 0;
   -webkit-transition: opacity 10s ease-in-out;
   -moz-transition: opacity 10s ease-in-out;
   -ms-transition: opacity 10s ease-in-out;
   -o-transition: opacity 10s ease-in-out;
-  opacity: 0;
 }
