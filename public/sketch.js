@@ -35,7 +35,7 @@ function setup() {
     // Listen for changes to input field
     input = createInput('');
     input.id('input');
-    input.attribute('placeholder','Find Who You Are Talking To ;)');
+    input.attribute('placeholder','Find who you are talking to ;)');
 
     // Listen for texts from partners
     connection.on("text", function(sender, text) {
