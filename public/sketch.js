@@ -34,25 +34,25 @@ function setup() {
 
     // Listen for changes to input field
     input = createInput('');
-    input.id('input');
+    input.id(input);
     input.attribute('placeholder','Find who you are talking to ;)');
 
     // Listen for texts from partners
     connection.on("text", function(id, text) {
-        let id = id;
+        let ID = id;
         let txt = text;
         let p;
         try {
-            p = select("#" + id).html(txt);
+            p = select("#" + ID).html(txt);
             p.elt.className = "";
             if (p.timeout) clearTimeout(p.timeout);
             p.timeout = setTimeout(() => p.addClass("fade"), 100);
             console.log("same person");
         } catch {
             // Otherwise craete a new on
-            p = createP(txt).id(id);
+            p = createP(txt).id(ID);
             p.addClass("fade");
-            console.log(id);
+            console.log(ID);
         }
     });
 
