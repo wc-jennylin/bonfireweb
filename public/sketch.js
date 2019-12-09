@@ -86,7 +86,8 @@ function draw(){
         let now = second();
         let time = abs(now - start);
         if (time > 30){
-            let tips = createP('Tips: (at most 5 people in a chatroom)' + '<br>' +
+            let tips = createP('Hint: At most 5 people in a chatroom' + '<br>' +
+            'You all could... to find each other faster ;)' + '<br>' +
             '1)	Count off' + '<br>' +
             '2)	Everyone raise a hand/does jumping jacks' + '<br>' + 
             '3)	Gather at a specific location' + '<br>' +
