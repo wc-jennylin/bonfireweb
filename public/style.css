@@ -55,6 +55,7 @@ p.center{
   color: #ffffff;
   font-size: 1em;
   text-align: center;
+  justify-content: flex-start;
 }
 
 .tips {
