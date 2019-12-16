@@ -55,6 +55,8 @@ p.center{
   color: #ffffff;
   font-size: 1em;
   text-align: center;
+  overflow: hidden;
+  position: fixed;
   /* justify-content: flex-start; */
 }
 
