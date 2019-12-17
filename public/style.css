@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #1a1a1a;
   margin: 0px;
   display: flex;
@@ -100,13 +100,6 @@ p.fade-out {
   @media {
       .safari6 { 
         body {
-          overflow: hidden;
-          background-color: #1a1a1a;
-          margin: 0px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          flex-direction: column;
           height: 50vh;
         }
 
@@ -120,7 +113,7 @@ p.fade-out {
           box-sizing: border-box;
           padding: 16px 20px;
           margin: 16px 12px;
-          bottom: 50vh;
+          bottom: 240px;
           left: 0px;
           width: 93vw;
           height: 2.3em;
@@ -134,13 +127,6 @@ p.fade-out {
   @media {
       .safari10 { 
         body {
-          overflow: hidden;
-          background-color: #1a1a1a;
-          margin: 0px;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          flex-direction: column;
           height: 50vh;
         }
 
@@ -154,7 +140,7 @@ p.fade-out {
           box-sizing: border-box;
           padding: 16px 20px;
           margin: 16px 12px;
-          bottom: 50vh;
+          bottom: 240px;
           left: 0px;
           width: 93vw;
           height: 2.3em;
