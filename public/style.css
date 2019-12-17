@@ -11,7 +11,7 @@ body {
 #input {
   background-color: #1a1a1a;
   color: #fff6ca;
-  position: fixed;
+  position: absolute;
   outline: none;
   border: 1px solid #fff6ca;
   border-radius: 50px;
@@ -26,7 +26,7 @@ body {
 }
 
 p.center{
-  position: fixed; /* or absolute */
+  position: absolute; /* or absolute */
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
@@ -53,8 +53,8 @@ p.center{
 }
 
 .prompt {
-  position: fixed;
-  top: 5px;
+  position: absolute;
+  top: 10px;
   color: #ffffff;
   font-size: 1em;
   text-align: center;
@@ -96,7 +96,7 @@ p.fade-out {
 }
 
 .safari.keyboard .app-container {
-  bottom: 400px;
+  bottom: 270px;
 }
 
 /* @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
