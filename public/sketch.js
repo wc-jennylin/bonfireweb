@@ -39,7 +39,7 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        congrats = createP("Welcome to Bonfire!" + "<br>" + "Wait for the count down on the big screen to enter your chatroom...");
+        congrats = createP("Welcome to Bonfire!" + "<br>" + "<br>" + "Counting down on the big screen to enter your chatroom...");
         congrats.addClass("center");
         // congrats.addClass("fade-out");
     });
@@ -53,7 +53,8 @@ function setup() {
         input.attribute('placeholder','Type to find your group...');
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
-        let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
+        // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
+        let welcomeMessage = createP("You’re in a chat with other people in this room!" + "<br>" + "Use the chatroom to find your group and then gather at a flower (station) that hasn’t been claimed." + "<br>" + "Send the code on your flower station in the group.");
         welcomeMessage = welcomeMessage.addClass('prompt');
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
