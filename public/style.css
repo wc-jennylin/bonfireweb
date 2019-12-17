@@ -2,11 +2,11 @@ body {
   overflow: hidden;
   background-color: #1a1a1a;
   margin: 0px;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  height: 75vh;
+  height: 75vh; */
 }
 
 #input {
@@ -57,6 +57,11 @@ p.center{
   color: #ffffff;
   font-size: 1em;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 75vh;
   /* position: fixed; */
   /* justify-content: flex-start; */
 }
@@ -86,6 +91,11 @@ p {
   font-size: 1.5em;
   text-align: center;
   margin: 0.25em 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 75vh;
 }
 p.fade-out {
   opacity: 0;

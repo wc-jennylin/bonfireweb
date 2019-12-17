@@ -47,14 +47,14 @@ function setup() {
     // Open chatroom
     connection.on("start", function(){
         // delayTime(5);
-        congrats.value("");
+        congrats.html("");
         input = createInput('');
         input.id('input');
         input.attribute('placeholder','Type to find your group...');
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
-        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom.");
+        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom." + "<br>" + "Don’t close your browser ;)");
         welcomeMessage = welcomeMessage.addClass('prompt');
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
