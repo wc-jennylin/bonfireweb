@@ -50,7 +50,7 @@ function setup() {
         congrats.html("");
         input = createInput('');
         input.id('input');
-        input.attribute('placeholder','Type to find your group...');
+        input.attribute('placeholder','Press "Return" to send your text...');
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
@@ -86,6 +86,34 @@ function setup() {
         createP("(someone left...)").addClass("fade-out");
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    setPlatformInfo();
+    var inputBox = document.querySelector('.safari #inputBox');
+    if(inputBox) {
+      inputBox.addEventListener('focus', function(e) {
+        document.body.classList.add('keyboard');
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 200);
+      });
+      
+      inputBox.addEventListener('blur', function(e) {
+        document.body.classList.remove('keyboard');
+      });
+    }
+  });
+  
+  function setPlatformInfo() {
+    var ua = navigator.userAgent.toLowerCase(); 
+    if (ua.indexOf('safari') != -1) { 
+      if (ua.indexOf('chrome') > -1) {
+        document.body.classList.add('chrome');
+      } else {
+        document.body.classList.add('safari');
+      }
+    }
+  }
 
 function draw(){
     if (start != -1){

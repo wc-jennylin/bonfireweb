@@ -1,5 +1,4 @@
 body {
-  /* overflow: hidden; */
   background-color: #1a1a1a;
   margin: 0px;
   display: flex;
@@ -96,7 +95,11 @@ p.fade-out {
   -o-transition: opacity 10s ease-in-out;
 }
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+.safari.keyboard .app-container {
+  bottom: 270px;
+}
+
+/* @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
   @media {
       .safari6 { 
         body {
@@ -148,4 +151,4 @@ p.fade-out {
         }
       }
   }
-}
+} */
