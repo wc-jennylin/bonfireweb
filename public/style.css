@@ -95,3 +95,37 @@ p.fade-out {
   -ms-transition: opacity 10s ease-in-out;
   -o-transition: opacity 10s ease-in-out;
 }
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+  @media {
+      .safari6 { 
+        body {
+          overflow: hidden;
+          background-color: #1a1a1a;
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex-direction: column;
+          height: 50vh;
+        }
+      }
+  }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+  @media {
+      .safari10 { 
+        body {
+          overflow: hidden;
+          background-color: #1a1a1a;
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          flex-direction: column;
+          height: 50vh;
+        }
+      }
+  }
+}
