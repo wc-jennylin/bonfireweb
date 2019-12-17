@@ -93,12 +93,10 @@ function draw(){
         let time = abs(now - start);
         if (time > 30 && timeToTip){
             let tips = createP('Hint: At most 5 people in a chatroom' + '<br>' +
-            'You all could ... to find each other faster ;)' + '<br>' +
-            '1)	Count off' + '<br>' +
-            '2)	Everyone raises a hand/does jumping jacks' + '<br>' + 
-            '3)	Gather at a specific location' + '<br>' +
-            '4)	Ask what colors everyone is wearing' + '<br>' +
-            'Get C.R.E.A.T.I.V.E!').addClass('tips');
+            'Tips for finding each other:' + '<br>' +
+            '1)	Everyone raises a hand/does jumping jacks' + '<br>' + 
+            '2)	Ask what colors everyone is wearing' + '<br>' +
+            '3) Get C.R.E.A.T.I.V.E!').addClass('tips');
             // tips.addClass('fade-out');
             start = now;
             timeToTip = false;
