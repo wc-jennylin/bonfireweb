@@ -54,7 +54,7 @@ function setup() {
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
-        let welcomeMessage = createP("You’re in a chat with other people in this room!" + "<br>" + "Use the chatroom to find your group and then gather at a flower (station) that hasn’t been claimed." + "<br>" + "Send the code on your flower station in the group.");
+        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom.");
         welcomeMessage = welcomeMessage.addClass('prompt');
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
@@ -102,15 +102,16 @@ function draw(){
             // tips.addClass('fade-out');
             start = now;
             timeToTip = false;
-        } else if (time > 30 && timeToTip == false){
-            start = now;
-            timeToRemind = true;
-            if (time > 30 && timeToRemind){
-            let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "& everyone sends the code on the flower to the chatroom").addClass('tips');
-            start = -1;
-            timeToRemind = false;
-            }   
-        }
+        } 
+        // else if (time > 30 && timeToTip == false){
+        //     start = now;
+        //     timeToRemind = true;
+        //     if (time > 30 && timeToRemind){
+        //     let reminder = createP("Gather everyone at a flower that hasn't been claimed" + "<br>" + "& everyone sends the code on the flower to the chatroom").addClass('tips');
+        //     start = -1;
+        //     timeToRemind = false;
+        //     }   
+        // }
         console.log(start, now, time);   
     }
 }
