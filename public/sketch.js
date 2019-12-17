@@ -45,8 +45,8 @@ function setup() {
 
     // Open chatroom
     connection.on("start", function(){
-        createCanvas(windowWidth, windowHeight);
-        background(26, 26, 26);
+        delayTime(5);
+        congrats.value("");
         input = createInput('');
         input.id('input');
         input.attribute('placeholder','Type to find your group...');
