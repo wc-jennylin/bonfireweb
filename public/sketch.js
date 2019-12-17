@@ -23,6 +23,7 @@ connection.onError(err => {
 // Input field
 let input;
 let start;
+let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
@@ -38,14 +39,14 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        let congrats = createP("Welcome to Bonfire!" + "<br>" + "Wait for the count down on the big screen to enter your chatroom...");
+        congrats = createP("Welcome to Bonfire!" + "<br>" + "Wait for the count down on the big screen to enter your chatroom...");
         congrats.addClass("center");
         // congrats.addClass("fade-out");
     });
 
     // Open chatroom
     connection.on("start", function(){
-        delayTime(5);
+        // delayTime(5);
         congrats.value("");
         input = createInput('');
         input.id('input');
