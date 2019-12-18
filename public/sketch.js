@@ -70,8 +70,10 @@ function setup() {
             if(inputBox) {
               inputBox.addEventListener('focus', function(e) {
                   console.log("Input Box Selected");
-                //document.body.classList.add('keyboard');
-                inputBox.styles.bottom = "270px";
+                document.body.classList.add('keyboard');
+                // inputBox.styles.bottom = "270px";
+
+
                 setTimeout(function() {
                     // window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
                     window.scrollTo(0, 0);
@@ -79,8 +81,8 @@ function setup() {
               });
               
               inputBox.addEventListener('blur', function(e) {
-                //document.body.classList.remove('keyboard');
-                inputBox.styles.bottom = "0px";
+                document.body.classList.remove('keyboard');
+                // inputBox.styles.bottom = "0px";
               });
             }
           //});
