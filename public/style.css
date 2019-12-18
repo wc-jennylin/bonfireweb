@@ -1,10 +1,10 @@
-/* .app-container {
+.app-container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-} */
+}
 
 body {
   position: absolute;
@@ -109,9 +109,9 @@ p.fade-out {
   -o-transition: opacity 10s ease-in-out;
 }
 
-/* .safari.keyboard .app-container {
+.safari.keyboard .app-container {
   bottom: 270px;
-} */
+}
 
 /* .safari.keyboard {
   bottom: 270px;
@@ -122,7 +122,7 @@ p.fade-out {
   font-size: 16px;
 } */
 
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+/* @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
   @media {
       .safari6.keyboard { 
         bottom: 270px;
@@ -136,4 +136,4 @@ p.fade-out {
         bottom: 270px;
       }
   }
-}
+} */
