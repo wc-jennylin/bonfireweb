@@ -27,7 +27,7 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
-console.log("up to date 6");
+console.log("up to date 7");
 
 function setup() {
     noCanvas();
