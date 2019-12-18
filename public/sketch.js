@@ -27,6 +27,8 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
+console.log("up to date 1");
+
 function setup() {
     noCanvas();
     // List is full
