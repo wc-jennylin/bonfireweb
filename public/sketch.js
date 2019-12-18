@@ -92,9 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
     var inputBox = document.querySelector('.safari #inputBox');
     if(inputBox) {
       inputBox.addEventListener('focus', function(e) {
+          console.log("Input Box Selected");
         document.body.classList.add('keyboard');
         setTimeout(function() {
-            window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+            //window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+            window.scrollTo(0, 0);
         }, 200);
       });
       
@@ -138,7 +140,7 @@ function draw(){
         //     timeToRemind = false;
         //     }   
         // }
-        console.log(start, now, time);   
+        // console.log(start, now, time);   
     }
 }
 
