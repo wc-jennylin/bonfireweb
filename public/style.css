@@ -8,8 +8,8 @@
 
 body {
   position: absolute;
-  left: 0;
-  width: 100%;
+  /* left: 0; */
+  /* width: 100%; */
   background-color: #1a1a1a;
   margin: 0px;
   display: flex;
