@@ -27,7 +27,7 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
-console.log("up to date 4");
+console.log("up to date 5");
 
 function setup() {
     noCanvas();
@@ -64,8 +64,8 @@ function setup() {
 
         //document.addEventListener('DOMContentLoaded', () => {
             setPlatformInfo();
-            var inputBox = document.getElementById("inputBox");
-            // var inputBox = document.querySelector('.safari #inputBox');
+            // var inputBox = document.getElementById("inputBox");
+            var inputBox = document.querySelector('.safari10.safari6 #inputBox');
             console.log(inputBox);
             if(inputBox) {
               inputBox.addEventListener('focus', function(e) {

@@ -113,65 +113,27 @@ p.fade-out {
   bottom: 270px;
 } */
 
-.safari.keyboard {
+/* .safari.keyboard {
   bottom: 270px;
-}
+} */
 
-To prevent auto-zoom in Safari
+/* To prevent auto-zoom in Safari
 .safari input[type='text'] {
   font-size: 16px;
-}
+} */
 
-/* @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
   @media {
-      .safari6 { 
-        body {
-          height: 50vh;
-        }
-
-        #input {
-          background-color: #1a1a1a;
-          color: #fff6ca;
-          position: fixed;
-          outline: none;
-          border: 1px solid #fff6ca;
-          border-radius: 50px;
-          box-sizing: border-box;
-          padding: 16px 20px;
-          margin: 16px 12px;
-          bottom: 240px;
-          left: 0px;
-          width: 93vw;
-          height: 2.3em;
-          font-size: 1.3em;
-        }
+      .safari6.keyboard { 
+        bottom: 270px;
       }
   }
 }
 
 @media not all and (min-resolution:.001dpcm) { 
   @media {
-      .safari10 { 
-        body {
-          height: 50vh;
-        }
-
-        #input {
-          background-color: #1a1a1a;
-          color: #fff6ca;
-          position: fixed;
-          outline: none;
-          border: 1px solid #fff6ca;
-          border-radius: 50px;
-          box-sizing: border-box;
-          padding: 16px 20px;
-          margin: 16px 12px;
-          bottom: 240px;
-          left: 0px;
-          width: 93vw;
-          height: 2.3em;
-          font-size: 1.3em;
-        }
+      .safari10.keyboard { 
+        bottom: 270px;
       }
   }
-} */
+}
