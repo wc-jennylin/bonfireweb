@@ -55,7 +55,7 @@ function setup() {
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
-        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom to bloom a flower on the big screen." + "<br>" + "Don’t close your browser ;)");
+        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom to bloom a flower on the big screen. Don’t close your browser ;)");
         welcomeMessage = welcomeMessage.addClass('prompt');
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
