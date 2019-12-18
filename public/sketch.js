@@ -27,7 +27,7 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
-console.log("up to date 2");
+console.log("up to date 4");
 
 function setup() {
     noCanvas();
@@ -70,7 +70,8 @@ function setup() {
             if(inputBox) {
               inputBox.addEventListener('focus', function(e) {
                   console.log("Input Box Selected");
-                document.body.classList.add('keyboard');
+                //document.body.classList.add('keyboard');
+                inputBox.styles.bottom = "270px";
                 setTimeout(function() {
                     // window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
                     window.scrollTo(0, 0);
@@ -78,7 +79,8 @@ function setup() {
               });
               
               inputBox.addEventListener('blur', function(e) {
-                document.body.classList.remove('keyboard');
+                //document.body.classList.remove('keyboard');
+                inputBox.styles.bottom = "0px";
               });
             }
           //});
@@ -148,6 +150,7 @@ function keyPressed() {
 
 function setPlatformInfo() {
     var ua = navigator.userAgent.toLowerCase(); 
+    console.log()
     if (ua.indexOf('safari') != -1) { 
       if (ua.indexOf('chrome') > -1) {
         document.body.classList.add('chrome');
