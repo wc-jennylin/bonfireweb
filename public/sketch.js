@@ -48,7 +48,6 @@ function setup() {
 
     // Open chatroom
     connection.on("start", function(){
-        // delayTime(5);
         congrats.html("");
         input = createInput('');
         input.id('inputBox');
@@ -73,8 +72,8 @@ function setup() {
                   console.log("Input Box Selected");
                 document.body.classList.add('keyboard');
                 setTimeout(function() {
-                    //window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
-                    window.scrollTo(0, 0);
+                    window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+                    // window.scrollTo(0, 0);
                 }, 200);
               });
               
