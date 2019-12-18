@@ -1,14 +1,14 @@
-.app-container {
+/* .app-container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-}
+} */
 
 body {
   position: absolute;
-  left: 0;
+  /* left: 0; */
   /* width: 100%; */
   background-color: #1a1a1a;
   margin: 0px;
@@ -51,7 +51,7 @@ p.center{
   -o-transition: opacity 30s ease-in; */
 }
 
-.transbox {
+/* .transbox {
   /* margin: 30px; */
   background-color: #fff6ca;
   border-radius: 24px;
@@ -63,7 +63,7 @@ p.center{
   align-items: center;
   justify-content: flex-end;
   flex-direction: column; */
-}
+} */
 
 .prompt {
   position: absolute;
@@ -109,9 +109,9 @@ p.fade-out {
   -o-transition: opacity 10s ease-in-out;
 }
 
-.safari.keyboard .app-container {
+/* .safari.keyboard .app-container {
   bottom: 270px;
-}
+} */
 
 /* .safari.keyboard {
   bottom: 270px;
