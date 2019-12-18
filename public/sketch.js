@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       inputBox.addEventListener('focus', function(e) {
         document.body.classList.add('keyboard');
         setTimeout(function() {
-            window.scrollTo(0, 0);
+            window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
         }, 200);
       });
       
