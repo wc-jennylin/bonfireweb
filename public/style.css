@@ -51,21 +51,7 @@ p.center{
   -o-transition: opacity 30s ease-in; */
 }
 
-/* .transbox {
-  /* margin: 30px; */
-  background-color: #fff6ca;
-  border-radius: 24px;
-  /* border-style: none; */
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-  height: 2em;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column; */
-} */
-
-.prompt {
+p.prompt {
   position: absolute;
   top: 10px;
   width: 90vw;
@@ -75,7 +61,7 @@ p.center{
   /* justify-content: flex-start; */
 }
 
-.tips {
+p.tips {
   color: #ffffff;
   font-size: 1em;
   text-align: center;
@@ -101,6 +87,7 @@ p {
   text-align: center;
   margin: 0.25em 0;
 }
+
 p.fade-out {
   opacity: 0;
   -webkit-transition: opacity 10s ease-in-out;

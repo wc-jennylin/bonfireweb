@@ -27,7 +27,7 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
-console.log("up to date 9");
+console.log("up to date 10");
 
 function setup() {
     noCanvas();
@@ -52,8 +52,6 @@ function setup() {
         input = createInput('');
         input.id('inputBox');
         input.attribute('placeholder','Press "return" to send your text...');
-        // let welcome = createDiv('');
-        // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
         let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom to bloom a flower on the big screen. Don’t close your browser ;)");
         welcomeMessage = welcomeMessage.addClass('prompt');
