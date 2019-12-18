@@ -50,7 +50,7 @@ function setup() {
         congrats.html("");
         input = createInput('');
         input.id('input');
-        input.attribute('placeholder','Press "Return" to send your text...');
+        input.attribute('placeholder','Press "return" to send your text...');
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
