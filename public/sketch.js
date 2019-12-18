@@ -64,8 +64,8 @@ function setup() {
 
         //document.addEventListener('DOMContentLoaded', () => {
             setPlatformInfo();
-            //var inputBox = document.getElementById("inputBox");
-            var inputBox = document.querySelector('.safari #inputBox');
+            var inputBox = document.getElementById("inputBox");
+            // var inputBox = document.querySelector('.safari #inputBox');
             console.log(inputBox);
             if(inputBox) {
               inputBox.addEventListener('focus', function(e) {
