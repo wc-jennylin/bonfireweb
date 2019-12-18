@@ -10,7 +10,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-#input {
+#inputBox {
   background-color: #1a1a1a;
   color: #fff6ca;
   position: fixed;

@@ -49,7 +49,7 @@ function setup() {
         // delayTime(5);
         congrats.html("");
         input = createInput('');
-        input.id('input');
+        input.id('inputBox');
         input.attribute('placeholder','Press "return" to send your text...');
         // let welcome = createDiv('');
         // welcome.addClass('transbox');
@@ -90,6 +90,7 @@ function setup() {
 document.addEventListener('DOMContentLoaded', () => {
     setPlatformInfo();
     var inputBox = document.querySelector('.safari #inputBox');
+    console.log(inputBox);
     if(inputBox) {
       inputBox.addEventListener('focus', function(e) {
           console.log("Input Box Selected");
