@@ -6,6 +6,8 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   height: 75vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 #input {
