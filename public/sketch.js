@@ -27,7 +27,7 @@ let congrats;
 let timeToTip = true;
 let timeToRemind = false;
 
-console.log("up to date 1");
+console.log("up to date 2");
 
 function setup() {
     noCanvas();
@@ -61,6 +61,28 @@ function setup() {
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
         start = second();
+
+
+        //document.addEventListener('DOMContentLoaded', () => {
+            setPlatformInfo();
+            var inputBox = document.getElementById("inputBox");
+            //var inputBox = document.querySelector('.safari #inputBox');
+            console.log(inputBox);
+            if(inputBox) {
+              inputBox.addEventListener('focus', function(e) {
+                  console.log("Input Box Selected");
+                document.body.classList.add('keyboard');
+                setTimeout(function() {
+                    //window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+                    window.scrollTo(0, 0);
+                }, 200);
+              });
+              
+              inputBox.addEventListener('blur', function(e) {
+                document.body.classList.remove('keyboard');
+              });
+            }
+          //});
     });
 
     // Listen for texts from partners
@@ -89,26 +111,7 @@ function setup() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    setPlatformInfo();
-    var inputBox = document.getElementById("inputBox");
-    //var inputBox = document.querySelector('.safari #inputBox');
-    console.log(inputBox);
-    if(inputBox) {
-      inputBox.addEventListener('focus', function(e) {
-          console.log("Input Box Selected");
-        document.body.classList.add('keyboard');
-        setTimeout(function() {
-            //window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
-            window.scrollTo(0, 0);
-        }, 200);
-      });
-      
-      inputBox.addEventListener('blur', function(e) {
-        document.body.classList.remove('keyboard');
-      });
-    }
-  });
+
   
   function setPlatformInfo() {
     var ua = navigator.userAgent.toLowerCase(); 
