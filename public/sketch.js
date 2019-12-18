@@ -41,7 +41,7 @@ function setup() {
 
     // Onboarding
     connection.on("you-got-in", function(){
-        congrats = createP("Welcome to Bonfire!" + "<br>" + "<br>" + "Wait for the count down on the big screen to enter your chatroom...");
+        congrats = createP("Welcome to Bonfire!" + "<br>" + "<br>" + "Wait for the countdown on the big screen to enter your chatroom...");
         congrats.addClass("center");
         // congrats.addClass("fade-out");
     });
