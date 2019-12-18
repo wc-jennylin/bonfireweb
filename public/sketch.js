@@ -150,14 +150,14 @@ function keyPressed() {
     }
 }
 
-function setPlatformInfo() {
-    var ua = navigator.userAgent.toLowerCase(); 
-    console.log()
-    if (ua.indexOf('safari') != -1) { 
-      if (ua.indexOf('chrome') > -1) {
-        document.body.classList.add('chrome');
-      } else {
-        document.body.classList.add('safari');
-      }
-    }
-  }
+// function setPlatformInfo() {
+//     var ua = navigator.userAgent.toLowerCase(); 
+//     console.log()
+//     if (ua.indexOf('safari') != -1) { 
+//       if (ua.indexOf('chrome') > -1) {
+//         document.body.classList.add('chrome');
+//       } else {
+//         document.body.classList.add('safari');
+//       }
+//     }
+//   }
