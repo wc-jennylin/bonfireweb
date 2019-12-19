@@ -53,7 +53,7 @@ function setup() {
         input.id('inputBox');
         input.attribute('placeholder','Press "return" to send your text...');
         // let welcomeMessage = createP("Try to find all other people in this chatroom" + "<br>" + "then sit your group at a flower.");
-        let welcomeMessage = createP("Use the chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom to bloom a flower on the big screen. Don’t close your browser ;)");
+        let welcomeMessage = createP("Use this chatroom to find your group and then gather at an empty flower station." + "<br>" + "Type the code on the flower in this chatroom to bloom a flower on the big screen." + "<br>" + "Don’t close your browser ;)");
         welcomeMessage = welcomeMessage.addClass('prompt');
         // welcomeMessage = welcomeMessage.addClass('fade-out');
         // welcome.child('welcomeMessage');
@@ -116,7 +116,7 @@ function draw(){
     if (start != -1){
         let now = second();
         let time = abs(now - start);
-        if (time > 30 && timeToTip){
+        if (time > 0 && timeToTip){
             let tips = createP('Hint: At most 5 people in a chatroom' + '<br>' +
             'Tips for finding each other:' + '<br>' +
             '1)	Everyone raises a hand/does jumping jacks' + '<br>' + 
