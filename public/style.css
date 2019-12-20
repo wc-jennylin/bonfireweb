@@ -99,7 +99,7 @@ p.fade-out {
 p.center.fade-in {
   /* opacity: 0; */
   animation-name: p-fade-in;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 
 @keyframes p-fade-in {
