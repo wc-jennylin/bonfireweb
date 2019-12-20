@@ -96,6 +96,17 @@ p.fade-out {
   -o-transition: opacity 10s ease-in-out;
 }
 
+p.center.fade-in {
+  /* opacity: 0; */
+  animation-name: p-fade-in;
+  animation-duration: 5s;
+}
+
+@keyframes p-fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 /* .safari.keyboard .app-container {
   bottom: 270px;
 } */
