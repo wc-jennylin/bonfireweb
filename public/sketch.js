@@ -35,7 +35,7 @@ function setup() {
     connection.on("list-is-full", function(){
         let sorry = createP("Sorry, only 50 people can play..." + "<br>" + "Join sooner next time!");
         sorry.addClass("center");
-        // sorry.addClass("load");
+        sorry.addClass("fade-in");
         connection.close();
     });
 
@@ -43,7 +43,7 @@ function setup() {
     connection.on("you-got-in", function(){
         congrats = createP("Welcome to Bonfire!" + "<br>" + "<br>" + "Wait for the countdown on the big screen to enter your chatroom...");
         congrats.addClass("center");
-        // congrats.addClass("fade-out");
+        congrats.addClass("fade-in");
     });
 
     // Open chatroom
